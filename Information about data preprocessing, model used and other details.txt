@@ -1,0 +1,13 @@
+1. Data loading and preprocessing
+* Input size = (224,224)
+* Normalization: Used the conventional way of diving image with 255
+* No other transformations are applied
+2.  Model definition and initialization
+* Unet architecture
+* Input size = (batch_size,1,224,224)
+* Outputs size = (batch_size, 1, 224, 224) (both outputs are of same size)
+3. Training, validation and experimentation
+* Loss function used: dice loss
+* Metrics used : iou
+* hyperparameters tuned: Played around little bit with learning rate and tuned it. Rest of the parameters seemed fine.
+
